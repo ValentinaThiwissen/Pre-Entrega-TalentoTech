@@ -9,15 +9,18 @@
 <body>
 
   <header>
-    <div class="header-container">
-      <img src="./assets/img/Logo.png" alt="Blush & Glow Logo" class="logo" />
-      <nav class="nav-links">
-        <a href="#productos">Productos</a>
-        <a href="#contacto">Contacto</a>
-        <a href="#resenas">Reseñas</a>
-      </nav>
+  <div class="header-container">
+    <img src="./assets/img/Logo.png" alt="Blush & Glow Logo" class="logo" />
+    <nav class="nav-links">
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#resenas">Reseñas</a>
+    </nav>
+    <div class="carrito" id="carrito">
+      🛒 <span id="cantidad-carrito">0</span>
     </div>
-  </header>
+  </div>
+</header>
 
   <main>
 
@@ -149,5 +152,18 @@
   <footer>
     <p>&copy; 2025 Blush & Glow - Todos los derechos reservados.</p>
   </footer>
+  
+  <div id="resumen-carrito">
+    <h3>Carrito</h3>
+    <div id="productos-carrito"></div>
+    <p><strong>Total: $<span id="total-carrito">0</span></strong></p>
+    <div style="display: flex; justify-content: space-between; gap: 10px;">
+      <button id="vaciar-carrito" style="background:#ccc; border:none; border-radius:5px; padding:5px 10px; cursor:pointer;">Vaciar carrito</button>
+      <button id="comprar-carrito" style="background:#ff4da6; border:none; color:white; border-radius:5px; padding:5px 10px; cursor:pointer;">Comprar</button>
+      <button id="cerrar-carrito" style="background:#999; border:none; color:white; border-radius:5px; padding:5px 10px; cursor:pointer;">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
